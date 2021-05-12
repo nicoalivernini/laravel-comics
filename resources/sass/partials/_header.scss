@@ -24,7 +24,7 @@ header {
       }
       .menu-navbar {
         .content-menu-navbar {
-          @include flex-center;
+          @include flex-between-center;
           .right-menu-navbar {
             .content-right-menu-navbar {
               img {
@@ -39,10 +39,17 @@ header {
                 @include flex-center;
                 list-style: none;
                 li {
+                  @include flex-center;
                   a {
                     font-size: 10px;
                     text-decoration: none;
                     text-transform: uppercase;
+                    padding: 0 10px;
+                    color: $color-gray;
+                    &.active {
+                      color: $color-blue;
+                      border-bottom: 2px solid $color-blue;
+                    }
                   }
                 }
               }
@@ -50,9 +57,15 @@ header {
           }
           .left-menu-navbar {
             .content-left-menu-navbar {
+              @include flex-center;
+              border-bottom: 2px solid $color-blue;
               input {
+                width: 70px;
+                border: none;
                 &::placeholder {
                   text-align: right;
+                  font-size: 10px;
+                  padding: 5px 0;
                 }
               }
             }

@@ -19,9 +19,8 @@
           <div class="center-menu-navbar">
             <div class="content-center-menu-navbar">
               <ul>
-                <li><a href=""><img src="" alt=""></a></li>
                 <li><a href="">characters</a></li>
-                <li><a href="">comics</a></li>
+                <li><a href="" class="active">comics</a></li>
                 <li><a href="">movies</a></li>
                 <li><a href="">tv</a></li>
                 <li><a href="">games</a></li>
@@ -36,6 +35,7 @@
           <div class="left-menu-navbar">
             <div class="content-left-menu-navbar">
               <input type="text" name="" value="" placeholder="Search">
+              <i class="fas fa-search"></i>
             </div>
           </div>
         </div>

@@ -42,7 +42,7 @@ header .container .navbar .banner-navbar .content-banner-navbar ul li a {
 
 header .container .navbar .menu-navbar .content-menu-navbar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -58,22 +58,53 @@ header .container .navbar .menu-navbar .content-menu-navbar .center-menu-navbar 
   list-style: none;
 }
 
+header .container .navbar .menu-navbar .content-menu-navbar .center-menu-navbar .content-center-menu-navbar ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 header .container .navbar .menu-navbar .content-menu-navbar .center-menu-navbar .content-center-menu-navbar ul li a {
   font-size: 10px;
   text-decoration: none;
   text-transform: uppercase;
+  padding: 0 10px;
+  color: #2e2e2e;
+}
+
+header .container .navbar .menu-navbar .content-menu-navbar .center-menu-navbar .content-center-menu-navbar ul li a.active {
+  color: #0d69f6;
+  border-bottom: 2px solid #0d69f6;
+}
+
+header .container .navbar .menu-navbar .content-menu-navbar .left-menu-navbar .content-left-menu-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #0d69f6;
+}
+
+header .container .navbar .menu-navbar .content-menu-navbar .left-menu-navbar .content-left-menu-navbar input {
+  width: 70px;
+  border: none;
 }
 
 header .container .navbar .menu-navbar .content-menu-navbar .left-menu-navbar .content-left-menu-navbar input::-moz-placeholder {
   text-align: right;
+  font-size: 10px;
+  padding: 5px 0;
 }
 
 header .container .navbar .menu-navbar .content-menu-navbar .left-menu-navbar .content-left-menu-navbar input:-ms-input-placeholder {
   text-align: right;
+  font-size: 10px;
+  padding: 5px 0;
 }
 
 header .container .navbar .menu-navbar .content-menu-navbar .left-menu-navbar .content-left-menu-navbar input::placeholder {
   text-align: right;
+  font-size: 10px;
+  padding: 5px 0;
 }
 
 section .container .current-series .content-current-series {
