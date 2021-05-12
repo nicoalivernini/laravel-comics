@@ -1,5 +1,8 @@
 header {
   .container {
+    &.blue {
+      background-color: $color-blue;
+    }
     .navbar {
       .banner-navbar {
         .content-banner-navbar {
@@ -22,6 +25,10 @@ header {
           }
         }
       }
+    }
+  }
+  .container {
+    .navbar-menu {
       .menu-navbar {
         .content-menu-navbar {
           @include flex-between-center;

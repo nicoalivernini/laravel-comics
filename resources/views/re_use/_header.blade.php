@@ -1,5 +1,5 @@
 <header>
-  <div class="container">
+  <div class="container fluid blue">
     <div class="navbar">
       <div class="banner-navbar">
         <div class="content-banner-navbar">
@@ -9,6 +9,10 @@
           </ul>
         </div>
       </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="navbar-menu">
       <div class="menu-navbar">
         <div class="content-menu-navbar">
           <div class="right-menu-navbar">
@@ -42,4 +46,5 @@
       </div>
     </div>
   </div>
+
 </header>

@@ -15,7 +15,7 @@
 
   <main>
     <section>
-      <div class="container">
+      <div class="container fluid">
         <div class="jumbo">
           <div class="content-jumbo">
 
@@ -24,8 +24,13 @@
       </div>
     </section>
     <section>
-      <div class="container">
+      <div class="container fluid gray">
         <div class="current-series">
+          <div class="title-current-series">
+            <div class="content-title-current-series">
+              <h2>current series</h2>
+            </div>
+          </div>
           <div class="content-current-series">
             @foreach ($comics as $comic)
             <div class="card-series">
@@ -35,6 +40,11 @@
               </div>
             </div>
             @endforeach
+          </div>
+          <div class="load-more">
+            <div class="content-load-more">
+              <button type="button" name="button">load more</button>
+            </div>
           </div>
         </div>
       </div>
