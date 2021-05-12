@@ -1,1 +1,64 @@
-
+header {
+  .container {
+    .navbar {
+      .banner-navbar {
+        .content-banner-navbar {
+          background-color: $color-blue;
+          ul {
+            @include flex-end-center;
+            list-style: none;
+            li {
+              @include flex-center;
+              a {
+                color: $color-blue;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-weight: 400;
+                padding: 5px 15px;
+                color: $color-white;
+                font-size: 10px;
+              }
+            }
+          }
+        }
+      }
+      .menu-navbar {
+        .content-menu-navbar {
+          @include flex-center;
+          .right-menu-navbar {
+            .content-right-menu-navbar {
+              img {
+                width: 40%;
+                padding: 5px 0;
+              }
+            }
+          }
+          .center-menu-navbar {
+            .content-center-menu-navbar {
+              ul {
+                @include flex-center;
+                list-style: none;
+                li {
+                  a {
+                    font-size: 10px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                  }
+                }
+              }
+            }
+          }
+          .left-menu-navbar {
+            .content-left-menu-navbar {
+              input {
+                &::placeholder {
+                  text-align: right;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

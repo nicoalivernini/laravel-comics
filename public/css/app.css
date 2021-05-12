@@ -4,3 +4,82 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header .container .navbar .banner-navbar .content-banner-navbar {
+  background-color: #0d69f6;
+}
+
+header .container .navbar .banner-navbar .content-banner-navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+header .container .navbar .banner-navbar .content-banner-navbar ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .container .navbar .banner-navbar .content-banner-navbar ul li a {
+  color: #0d69f6;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 400;
+  padding: 5px 15px;
+  color: #ffffff;
+  font-size: 10px;
+}
+
+header .container .navbar .menu-navbar .content-menu-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .container .navbar .menu-navbar .content-menu-navbar .right-menu-navbar .content-right-menu-navbar img {
+  width: 40%;
+  padding: 5px 0;
+}
+
+header .container .navbar .menu-navbar .content-menu-navbar .center-menu-navbar .content-center-menu-navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+header .container .navbar .menu-navbar .content-menu-navbar .center-menu-navbar .content-center-menu-navbar ul li a {
+  font-size: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header .container .navbar .menu-navbar .content-menu-navbar .left-menu-navbar .content-left-menu-navbar input::-moz-placeholder {
+  text-align: right;
+}
+
+header .container .navbar .menu-navbar .content-menu-navbar .left-menu-navbar .content-left-menu-navbar input:-ms-input-placeholder {
+  text-align: right;
+}
+
+header .container .navbar .menu-navbar .content-menu-navbar .left-menu-navbar .content-left-menu-navbar input::placeholder {
+  text-align: right;
+}
+
+section .container .current-series .content-current-series {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
