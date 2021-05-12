@@ -8,13 +8,13 @@
   </head>
   <body>
 
-  <?php @include('re-use._header') ?>
+  @include('re_use._header')
 
   <main>
 
   </main>
 
-  <?php @include('re-use._footer') ?>
-  
+  @include('re_use._footer')
+
   </body>
 </html>
