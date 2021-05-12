@@ -15,7 +15,7 @@
 
   <main>
     <section>
-      <div class="container fluid">
+      <div class="container full">
         <div class="jumbo">
           <div class="content-jumbo">
 
@@ -45,6 +45,36 @@
             <div class="content-load-more">
               <button type="button" name="button">load more</button>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container fluid blue">
+        <div class="banner">
+          <div class="content-banner">
+            <ul>
+              <li>
+                <img src="{{ asset('img/buy-comics-digital-comics.png') }}" alt="">
+                <h4>Digital comics</h4>
+              </li>
+              <li>
+                <img src="{{ asset('img/buy-comics-merchandise.png') }}" alt="">
+                <h4>DC merchandise</h4>
+              </li>
+              <li>
+                <img src="{{ asset('img/buy-comics-subscriptions.png') }}" alt="">
+                <h4>Subscription</h4>
+              </li>
+              <li>
+                <img src="{{ asset('img/buy-comics-shop-locator.png') }}" alt="">
+                <h4>Comic shop locator</h4>
+              </li>
+              <li>
+                <img src="{{ asset('img/buy-dc-power-visa.svg') }}" alt="">
+                <h4>Dc power visa</h4>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
