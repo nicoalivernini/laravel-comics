@@ -21,5 +21,5 @@ Route::get('/', function () {
 
 Route::get('/single/{id}', function ($id) {
   $database = config('db_dischi');
-  return view('single')->with('comic', $database[$id])->with('id', $id);
+  return view('single')->with('comic', $database[$id]);
 }) ->name('detail');

@@ -93,3 +93,145 @@ section {
     }
   }
 }
+
+section {
+  .container {
+    .thumb-nav {
+      position: relative;
+      .content-thumb-nav {
+        position: absolute;
+        top: -170px;
+        img {
+          width: 100px;
+        }
+      }
+    }
+  }
+}
+
+section {
+  .container {
+    .description-comic {
+      .content-description-comic {
+        @include flex-center;
+        margin: 25px 0;
+        .content-left {
+          padding-right: 20px;
+          .title {
+            h1 {
+              text-transform: uppercase;
+              font-size: 25px;
+              margin: 10px 0;
+            }
+          }
+          .banner-price {
+            background-color: $color_green;
+            @include flex-between-center;
+            padding: 10px 20px;
+            .price {
+              span {
+                color: $color-white;
+                &:first-child {
+                  font-weight: 200;
+                }
+              }
+            }
+            .availability {
+              span {
+                color: $color-white;
+
+                &:first-child {
+                  text-transform: uppercase;
+                    padding-right: 20px;
+                }
+              }
+            }
+          }
+          .description {
+            padding: 15px 0;
+            p {
+              line-height: 1.4em;
+              color: $color-gray;
+            }
+          }
+        }
+        .content-right {
+          padding-left: 20px;
+          .advertisement {
+            h5 {
+              text-align: right;
+              text-transform: uppercase;
+              color: $color-gray;
+            }
+            .img-advertisement {
+              img {
+                width: 250px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+section {
+  .container {
+    &.color {
+      background-color: $color_gray_back_comic;
+    }
+    .info-comic {
+      .content-info-comic {
+        .left-info-comic {
+          h4 {
+
+          }
+          .specific-info {
+            .art-info {
+              span {
+                &.title{
+
+                }
+              }
+            }
+            .written-info {
+              span {
+                &.title {
+
+                }
+              }
+            }
+          }
+        }
+        .right-info-comic {
+          h4 {
+
+          }
+          .specific-info {
+            .series {
+              span {
+                &.title {
+
+                }
+              }
+            }
+            .price {
+              span {
+                &.title {
+
+                }
+              }
+            }
+            .date {
+              span {
+                &.title {
+
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

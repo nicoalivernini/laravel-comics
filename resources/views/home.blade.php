@@ -11,7 +11,7 @@
       </div>
       <div class="content-current-series">
         @foreach ($comics as $index => $comic)
-        <a href="{{ route('detail', ['id'=> $index, 'genere' => 'action']) }}">
+        <a href="{{ route('detail', ['id'=> $index]) }}">
           <div class="card-series">
             <div class="content-card-series">
               <div class="thumbnails-card">
