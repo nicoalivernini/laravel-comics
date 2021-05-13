@@ -3,11 +3,19 @@
   justify-content: center;
   align-items: center;
 }
+
 @mixin flex-end-center {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
+
+@mixin flex-start-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
 
 @mixin flex-center-wrap {
   display: flex;
@@ -20,4 +28,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@mixin flex-center-start {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }

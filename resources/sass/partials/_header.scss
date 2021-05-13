@@ -81,4 +81,16 @@ header {
       }
     }
   }
+  .container {
+    .jumbo {
+      .content-jumbo {
+        background-image: url('./../img/jumbotron.jpg');
+        background-color: red;
+        width: 100%;
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
 }

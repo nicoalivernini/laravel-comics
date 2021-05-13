@@ -1,20 +1,5 @@
 section {
   .container {
-    .jumbo {
-      .content-jumbo {
-        background-image: url('./../img/jumbotron.jpg');
-        background-color: red;
-        width: 100%;
-        height: 300px;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-    }
-  }
-};
-
-section {
-  .container {
     position: relative;
     &.gray {
       background-color: $color-background-gray;
@@ -40,11 +25,15 @@ section {
       .content-current-series {
         @include flex-center-wrap;
         .card-series {
-          width: calc(100% / 6);
-          padding: 10px;
+          width: calc(100% / 6 - 20px);
+          margin: 0 10px;
           .content-card-series {
-            img {
-            width: 100%;
+            .thumbnails-card {
+              height: 150px;
+              overflow: hidden;
+              img {
+              width: 100%;
+              }
             }
             h3 {
               color: $color-white;

@@ -15,15 +15,6 @@
 
   <main>
     <section>
-      <div class="container full">
-        <div class="jumbo">
-          <div class="content-jumbo">
-
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
       <div class="container fluid gray">
         <div class="current-series">
           <div class="title-current-series">
@@ -35,7 +26,9 @@
             @foreach ($comics as $comic)
             <div class="card-series">
               <div class="content-card-series">
-                <img src="{{ $comic['thumb'] }}" alt="">
+                <div class="thumbnails-card">
+                  <img src="{{ $comic['thumb'] }}" alt="">  
+                </div>
                 <h3> {{ $comic['series'] }} </h3>
               </div>
             </div>
@@ -83,5 +76,6 @@
 
   @include('re_use._footer')
 
+  <script src="/js/app-js" charset="utf-8"></script>
   </body>
 </html>
