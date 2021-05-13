@@ -182,9 +182,14 @@ section {
     }
     .info-comic {
       .content-info-comic {
+        @include flex-between-start;
         .left-info-comic {
+          width: 45%;
+          padding-right: 10px;
           h4 {
-
+            font-size: 20px;
+            padding: 10px 0;
+            border-bottom: 1px solid red;
           }
           .specific-info {
             .art-info {
@@ -204,8 +209,12 @@ section {
           }
         }
         .right-info-comic {
+          width: 45%;
+          padding-left: 10px;
           h4 {
-
+            font-size: 20px;
+            padding: 10px 0;
+            border-bottom: 1px solid red;
           }
           .specific-info {
             .series {

@@ -57,11 +57,15 @@ in base all'indice dell'array in cui è. -->
           <div class="specific-info">
             <div class="art-info">
               <span class="title">Art by:</span>
-              <span>inserire</span>
+              @foreach ($comic['artists'] as $single)
+              <span><a href="">{{$single}},</a></span>
+              @endforeach
             </div>
             <div class="written-info">
               <span class="title">Written by:</span>
-              <span>Inserire</span>
+              @foreach ($comic['writers'] as $single)
+              <span><a href="">{{$single}},</a></span>
+              @endforeach
             </div>
           </div>
         </div>
@@ -70,7 +74,7 @@ in base all'indice dell'array in cui è. -->
           <div class="specific-info">
             <div class="series">
               <span class="title">Series:</span>
-              <span>{{$comic['series']}}</span>
+              <span><a href="">{{$comic['series']}}</a></span>
             </div>
             <div class="price">
               <span class="title">

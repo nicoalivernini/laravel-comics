@@ -263,6 +263,29 @@ section .container .description-comic .content-description-comic .content-right 
 section .container.color {
   background-color: #f4f4f4;
 }
+section .container .info-comic .content-info-comic {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+section .container .info-comic .content-info-comic .left-info-comic {
+  width: 45%;
+  padding-right: 10px;
+}
+section .container .info-comic .content-info-comic .left-info-comic h4 {
+  font-size: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid red;
+}
+section .container .info-comic .content-info-comic .right-info-comic {
+  width: 45%;
+  padding-left: 10px;
+}
+section .container .info-comic .content-info-comic .right-info-comic h4 {
+  font-size: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid red;
+}
 footer .container.background {
   background-image: url("./../img/footer-bg.jpg");
   background-size: cover;
