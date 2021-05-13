@@ -26,11 +26,11 @@ in base all'indice dell'array in cui è. -->
           </div>
           <div class="banner-price">
             <div class="price">
-              <span>U.S. Price:</span><span>{{$comic['price']}}</span>
+              <span>U.S. Price: </span><span>{{$comic['price']}}</span>
             </div>
             <div class="availability">
               <span>available</span>
-              <span>Check Availability</span>
+              <span>Check Availability <i class="fas fa-sort-down"></i></span>
             </div>
           </div>
           <div class="description">
@@ -57,7 +57,7 @@ in base all'indice dell'array in cui è. -->
           <h4>Talent</h4>
           <div class="specific-info">
             <div class="art-info">
-              <p class="title">Art by:</p>
+              <p class="title">Art by: </p>
               <div class="artists">
                 @foreach ($comic['artists'] as $single)
                 <span><a href="">{{$single}},</a></span>
@@ -65,7 +65,7 @@ in base all'indice dell'array in cui è. -->
               </div>
             </div>
             <div class="written-info">
-              <p class="title">Written by:</p>
+              <p class="title">Written by: </p>
               @foreach ($comic['writers'] as $single)
               <span><a href="">{{$single}},</a></span>
               @endforeach
@@ -76,15 +76,15 @@ in base all'indice dell'array in cui è. -->
           <h4>Specs</h4>
           <div class="specific-info">
             <div class="series">
-              <p class="title">Series:</p>
+              <p class="title">Series: </p>
               <span><a href="">{{$comic['series']}}</a></span>
             </div>
             <div class="price">
-              <p class="title">U.S. Price:</p>
+              <p class="title">U.S. Price: </p>
               <span>{{$comic['price']}}</span>
             </div>
             <div class="date">
-              <p class="title">On Sale Date:</p>
+              <p class="title">On Sale Date: </p>
               <span>{{$comic['sale_date']}}</span>
             </div>
           </div>

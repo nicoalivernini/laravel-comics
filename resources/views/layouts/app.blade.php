@@ -19,6 +19,6 @@
 
   @include('re_use._footer')
 
-  <script src="/js/app-js" charset="utf-8"></script>
+  <script src="/js/app.js" charset="utf-8"></script>
   </body>
 </html>

@@ -141,19 +141,25 @@ section {
             padding: 10px 20px;
             .price {
               span {
+                font-size: 13px;
                 color: $color-white;
                 &:first-child {
                   font-weight: 200;
+                  color: $color-green-title;
                 }
               }
             }
             .availability {
               span {
                 color: $color-white;
-
+                font-size: 13px;
                 &:first-child {
                   text-transform: uppercase;
-                    padding-right: 20px;
+                  padding-right: 20px;
+                  color: $color-green-title;
+                }
+                i {
+                  vertical-align: top;
                 }
               }
             }
@@ -161,7 +167,8 @@ section {
           .description {
             padding: 15px 0;
             p {
-              line-height: 1.4em;
+              line-height: 1.5em;
+              font-size: 13px;
               color: $color-gray;
             }
           }
@@ -200,25 +207,28 @@ section {
           padding-right: 10px;
           h4 {
             font-size: 20px;
-            padding: 10px 0;
+            padding: 20px 0;
             border-bottom: 1px solid $color_border_info;
+            font-weight: 500;
           }
           .specific-info {
             .art-info {
               padding: 10px 0;
               border-bottom: 1px solid $color_border_info;
-              span {
+              p {
                 &.title{
-
+                font-size: 13px;
+                width: 100px;
                 }
               }
             }
             .written-info {
               padding: 10px 0;
               border-bottom: 1px solid $color_border_info;
-              span {
+              p {
                 &.title {
-
+                font-size: 13px;
+                width: 100px;
                 }
               }
             }
@@ -229,8 +239,9 @@ section {
           padding-left: 10px;
           h4 {
             font-size: 20px;
-            padding: 10px 0;
+            padding: 20px 0;
             border-bottom: 1px solid $color_border_info;
+            font-weight: 500;
           }
           .specific-info {
             .series {
@@ -238,7 +249,10 @@ section {
               border-bottom: 1px solid $color_border_info;
               p {
                 &.title {
-
+                  display: inline-block;
+                  width: 100px;
+                  font-size: 13px;
+                  width: 100px;
                 }
               }
               span {
@@ -250,7 +264,10 @@ section {
               border-bottom: 1px solid $color_border_info;
               p {
                 &.title {
-
+                  display: inline-block;
+                  width: 100px;
+                  font-size: 13px;
+                  width: 100px;
                 }
               }
               span {
@@ -262,7 +279,10 @@ section {
               border-bottom: 1px solid $color_border_info;
               p {
                 &.title {
-
+                  display: inline-block;
+                  width: 100px;
+                  font-size: 13px;
+                  width: 100px;
                 }
               }
               span {
@@ -278,7 +298,8 @@ section {
         @include flex-center;
         .card-banner-comic {
           width: calc(100% / 4);
-          height: 40px;
+          height: 60px;
+          padding: 10px;
           @include flex-between-start;
           border-left: 1px solid $color_border_info;
             &:last-child {
@@ -286,7 +307,8 @@ section {
             }
           span {
             text-transform: uppercase;
-            color: $color-gray;
+            color: $color-gray-banner-comic;
+            font-size: 12px;
           }
           img {
             width: 30px;

@@ -252,23 +252,31 @@ section .container .description-comic .content-description-comic .content-left .
   padding: 10px 20px;
 }
 section .container .description-comic .content-description-comic .content-left .banner-price .price span {
+  font-size: 13px;
   color: #ffffff;
 }
 section .container .description-comic .content-description-comic .content-left .banner-price .price span:first-child {
   font-weight: 200;
+  color: #a3ff8b;
 }
 section .container .description-comic .content-description-comic .content-left .banner-price .availability span {
   color: #ffffff;
+  font-size: 13px;
 }
 section .container .description-comic .content-description-comic .content-left .banner-price .availability span:first-child {
   text-transform: uppercase;
   padding-right: 20px;
+  color: #a3ff8b;
+}
+section .container .description-comic .content-description-comic .content-left .banner-price .availability span i {
+  vertical-align: top;
 }
 section .container .description-comic .content-description-comic .content-left .description {
   padding: 15px 0;
 }
 section .container .description-comic .content-description-comic .content-left .description p {
-  line-height: 1.4em;
+  line-height: 1.5em;
+  font-size: 13px;
   color: #464646;
 }
 section .container .description-comic .content-description-comic .content-right {
@@ -300,16 +308,25 @@ section .container .info-comic .content-info-comic .left-info-comic {
 }
 section .container .info-comic .content-info-comic .left-info-comic h4 {
   font-size: 20px;
-  padding: 10px 0;
+  padding: 20px 0;
   border-bottom: 1px solid #dadada;
+  font-weight: 500;
 }
 section .container .info-comic .content-info-comic .left-info-comic .specific-info .art-info {
   padding: 10px 0;
   border-bottom: 1px solid #dadada;
 }
+section .container .info-comic .content-info-comic .left-info-comic .specific-info .art-info p.title {
+  font-size: 13px;
+  width: 100px;
+}
 section .container .info-comic .content-info-comic .left-info-comic .specific-info .written-info {
   padding: 10px 0;
   border-bottom: 1px solid #dadada;
+}
+section .container .info-comic .content-info-comic .left-info-comic .specific-info .written-info p.title {
+  font-size: 13px;
+  width: 100px;
 }
 section .container .info-comic .content-info-comic .right-info-comic {
   width: 45%;
@@ -317,20 +334,39 @@ section .container .info-comic .content-info-comic .right-info-comic {
 }
 section .container .info-comic .content-info-comic .right-info-comic h4 {
   font-size: 20px;
-  padding: 10px 0;
+  padding: 20px 0;
   border-bottom: 1px solid #dadada;
+  font-weight: 500;
 }
 section .container .info-comic .content-info-comic .right-info-comic .specific-info .series {
   padding: 10px 0;
   border-bottom: 1px solid #dadada;
 }
+section .container .info-comic .content-info-comic .right-info-comic .specific-info .series p.title {
+  display: inline-block;
+  width: 100px;
+  font-size: 13px;
+  width: 100px;
+}
 section .container .info-comic .content-info-comic .right-info-comic .specific-info .price {
   padding: 10px 0;
   border-bottom: 1px solid #dadada;
 }
+section .container .info-comic .content-info-comic .right-info-comic .specific-info .price p.title {
+  display: inline-block;
+  width: 100px;
+  font-size: 13px;
+  width: 100px;
+}
 section .container .info-comic .content-info-comic .right-info-comic .specific-info .date {
   padding: 10px 0;
   border-bottom: 1px solid #dadada;
+}
+section .container .info-comic .content-info-comic .right-info-comic .specific-info .date p.title {
+  display: inline-block;
+  width: 100px;
+  font-size: 13px;
+  width: 100px;
 }
 section .container .banner-comic .content-banner-comic {
   display: flex;
@@ -339,7 +375,8 @@ section .container .banner-comic .content-banner-comic {
 }
 section .container .banner-comic .content-banner-comic .card-banner-comic {
   width: calc(100% / 4);
-  height: 40px;
+  height: 60px;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -350,7 +387,8 @@ section .container .banner-comic .content-banner-comic .card-banner-comic:last-c
 }
 section .container .banner-comic .content-banner-comic .card-banner-comic span {
   text-transform: uppercase;
-  color: #464646;
+  color: #cfcfcf;
+  font-size: 12px;
 }
 section .container .banner-comic .content-banner-comic .card-banner-comic img {
   width: 30px;
