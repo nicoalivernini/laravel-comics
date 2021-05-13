@@ -56,13 +56,13 @@ in base all'indice dell'array in cui è. -->
           <h4>Talent</h4>
           <div class="specific-info">
             <div class="art-info">
-              <span class="title">Art by:</span>
+              <p class="title">Art by:</p>
               @foreach ($comic['artists'] as $single)
               <span><a href="">{{$single}},</a></span>
               @endforeach
             </div>
             <div class="written-info">
-              <span class="title">Written by:</span>
+              <p class="title">Written by:</p>
               @foreach ($comic['writers'] as $single)
               <span><a href="">{{$single}},</a></span>
               @endforeach
@@ -73,19 +73,38 @@ in base all'indice dell'array in cui è. -->
           <h4>Specs</h4>
           <div class="specific-info">
             <div class="series">
-              <span class="title">Series:</span>
+              <p class="title">Series:</p>
               <span><a href="">{{$comic['series']}}</a></span>
             </div>
             <div class="price">
-              <span class="title">
-                <span>{{$comic['price']}}</span>
-              </span>
+              <p class="title">U.S. Price:</p>
+              <span>{{$comic['price']}}</span>
             </div>
             <div class="date">
-              <span class="title">On Sale Date:</span>
+              <p class="title">On Sale Date:</p>
               <span>{{$comic['sale_date']}}</span>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner-comic">
+      <div class="content-banner-comic">
+        <div class="card-banner-comic">
+          <span>Digital comics</span>
+          <img src="{{ asset('img/buy-comics-digital-comics.png') }}" alt="">
+        </div>
+        <div class="card-banner-comic">
+          <span>Shop DC</span>
+          <img src="{{ asset('img/buy-comics-subscriptions.png') }}" alt="">
+        </div>
+        <div class="card-banner-comic">
+          <span>Comic shop locator</span>
+          <img src="{{ asset('img/buy-comics-shop-locator.png') }}" alt="">
+        </div>
+        <div class="card-banner-comic">
+          <span>Subscriptions</span>
+          <img src="{{ asset('img/buy-comics-merchandise.png') }}" alt="">
         </div>
       </div>
     </div>

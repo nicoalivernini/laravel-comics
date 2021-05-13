@@ -57,6 +57,12 @@ header .container .navbar-menu .menu-navbar .content-menu-navbar .right-menu-nav
   width: 40%;
   padding: 5px 0;
 }
+header .container .navbar-menu .menu-navbar .content-menu-navbar .center-menu-navbar .content-center-menu-navbar {
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 header .container .navbar-menu .menu-navbar .content-menu-navbar .center-menu-navbar .content-center-menu-navbar ul {
   display: flex;
   justify-content: center;
@@ -72,7 +78,8 @@ header .container .navbar-menu .menu-navbar .content-menu-navbar .center-menu-na
   font-size: 10px;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 0 10px;
+  padding: 0 15px;
+  font-weight: 500;
   color: #2e2e2e;
 }
 header .container .navbar-menu .menu-navbar .content-menu-navbar .center-menu-navbar .content-center-menu-navbar ul li a.active {
@@ -91,18 +98,27 @@ header .container .navbar-menu .menu-navbar .content-menu-navbar .left-menu-navb
 }
 header .container .navbar-menu .menu-navbar .content-menu-navbar .left-menu-navbar .content-left-menu-navbar input::-moz-placeholder {
   text-align: right;
-  font-size: 10px;
+  font-size: 11px;
   padding: 5px 0;
+  color: #2e2e2e;
+  padding-right: 7px;
 }
 header .container .navbar-menu .menu-navbar .content-menu-navbar .left-menu-navbar .content-left-menu-navbar input:-ms-input-placeholder {
   text-align: right;
-  font-size: 10px;
+  font-size: 11px;
   padding: 5px 0;
+  color: #2e2e2e;
+  padding-right: 7px;
 }
 header .container .navbar-menu .menu-navbar .content-menu-navbar .left-menu-navbar .content-left-menu-navbar input::placeholder {
   text-align: right;
-  font-size: 10px;
+  font-size: 11px;
   padding: 5px 0;
+  color: #2e2e2e;
+  padding-right: 7px;
+}
+header .container .navbar-menu .menu-navbar .content-menu-navbar .left-menu-navbar .content-left-menu-navbar i.fa-search {
+  font-size: 15px;
 }
 header .container .jumbo .content-jumbo {
   background-image: url("./../img/jumbotron.jpg");
@@ -127,12 +143,12 @@ section .container .current-series .title-current-series .content-title-current-
   text-transform: uppercase;
   background-color: #0d69f6;
   padding: 10px;
-  width: 130px;
+  width: 200px;
   text-align: center;
   position: absolute;
   top: -20px;
   left: 10%;
-  font-size: 15px;
+  font-size: 20px;
 }
 section .container .current-series .content-current-series {
   display: flex;
@@ -263,6 +279,9 @@ section .container .description-comic .content-description-comic .content-right 
 section .container.color {
   background-color: #f4f4f4;
 }
+section .container .info-comic {
+  padding-bottom: 70px;
+}
 section .container .info-comic .content-info-comic {
   display: flex;
   justify-content: space-between;
@@ -277,6 +296,14 @@ section .container .info-comic .content-info-comic .left-info-comic h4 {
   padding: 10px 0;
   border-bottom: 1px solid red;
 }
+section .container .info-comic .content-info-comic .left-info-comic .specific-info .art-info {
+  padding: 10px 0;
+  border-bottom: 1px solid red;
+}
+section .container .info-comic .content-info-comic .left-info-comic .specific-info .written-info {
+  padding: 10px 0;
+  border-bottom: 1px solid red;
+}
 section .container .info-comic .content-info-comic .right-info-comic {
   width: 45%;
   padding-left: 10px;
@@ -286,6 +313,42 @@ section .container .info-comic .content-info-comic .right-info-comic h4 {
   padding: 10px 0;
   border-bottom: 1px solid red;
 }
+section .container .info-comic .content-info-comic .right-info-comic .specific-info .series {
+  padding: 10px 0;
+  border-bottom: 1px solid red;
+}
+section .container .info-comic .content-info-comic .right-info-comic .specific-info .price {
+  padding: 10px 0;
+  border-bottom: 1px solid red;
+}
+section .container .info-comic .content-info-comic .right-info-comic .specific-info .date {
+  padding: 10px 0;
+  border-bottom: 1px solid red;
+}
+section .container .banner-comic .content-banner-comic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .container .banner-comic .content-banner-comic .card-banner-comic {
+  width: calc(100% / 4);
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-left: 1px solid red;
+}
+section .container .banner-comic .content-banner-comic .card-banner-comic:last-child {
+  border-right: 1px solid red;
+}
+section .container .banner-comic .content-banner-comic .card-banner-comic span {
+  text-transform: uppercase;
+  color: #2e2e2e;
+}
+section .container .banner-comic .content-banner-comic .card-banner-comic img {
+  width: 30px;
+}
+
 footer .container.background {
   background-image: url("./../img/footer-bg.jpg");
   background-size: cover;

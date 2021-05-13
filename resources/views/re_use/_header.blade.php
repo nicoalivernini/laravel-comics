@@ -4,8 +4,8 @@
       <div class="banner-navbar">
         <div class="content-banner-navbar">
           <ul>
-            <li><a href="#">dc power visa</a></li>
-            <li><a href="#">additional dc sites</a></li>
+            <li><a href="#">dc power &trade; visa &reg;</a></li>
+            <li><a href="#">additional dc sites <i class="fas fa-sort-down"></i></a></li>
           </ul>
         </div>
       </div>
@@ -17,7 +17,7 @@
         <div class="content-menu-navbar">
           <div class="right-menu-navbar">
             <div class="content-right-menu-navbar">
-              <img src="{{ asset('img/dc-logo.png') }}" alt="">
+              <a href="/"><img src="{{ asset('img/dc-logo.png') }}" alt=""></a>
             </div>
           </div>
           <div class="center-menu-navbar">

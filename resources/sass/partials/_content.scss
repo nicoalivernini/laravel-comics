@@ -13,12 +13,12 @@ section {
             text-transform: uppercase;
             background-color: $color-blue;
             padding: 10px;
-            width: 130px;
+            width: 200px;
             text-align: center;
             position: absolute;
             top: -20px;
             left: 10%;
-            font-size: 15px;
+            font-size: 20px;
           }
         }
       }
@@ -181,6 +181,7 @@ section {
       background-color: $color_gray_back_comic;
     }
     .info-comic {
+      padding-bottom: 70px;
       .content-info-comic {
         @include flex-between-start;
         .left-info-comic {
@@ -193,6 +194,8 @@ section {
           }
           .specific-info {
             .art-info {
+              padding: 10px 0;
+              border-bottom: 1px solid red;
               span {
                 &.title{
 
@@ -200,6 +203,8 @@ section {
               }
             }
             .written-info {
+              padding: 10px 0;
+              border-bottom: 1px solid red;
               span {
                 &.title {
 
@@ -218,26 +223,62 @@ section {
           }
           .specific-info {
             .series {
-              span {
+              padding: 10px 0;
+              border-bottom: 1px solid red;
+              p {
                 &.title {
 
                 }
+              }
+              span {
+
               }
             }
             .price {
-              span {
+              padding: 10px 0;
+              border-bottom: 1px solid red;
+              p {
                 &.title {
 
                 }
+              }
+              span {
+
               }
             }
             .date {
-              span {
+              padding: 10px 0;
+              border-bottom: 1px solid red;
+              p {
                 &.title {
 
                 }
               }
+              span {
+
+              }
             }
+          }
+        }
+      }
+    }
+    .banner-comic {
+      .content-banner-comic {
+        @include flex-center;
+        .card-banner-comic {
+          width: calc(100% / 4);
+          height: 40px;
+          @include flex-between-start;
+          border-left: 1px solid red;
+            &:last-child {
+              border-right: 1px solid red;
+            }
+          span {
+            text-transform: uppercase;
+            color: $color-gray;
+          }
+          img {
+            width: 30px;
           }
         }
       }
