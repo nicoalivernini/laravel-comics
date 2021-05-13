@@ -140,18 +140,19 @@ section .container .current-series .content-current-series {
   justify-content: center;
   flex-wrap: wrap;
 }
-section .container .current-series .content-current-series .card-series {
+section .container .current-series .content-current-series a {
+  text-decoration: none;
   width: calc(100% / 6 - 20px);
   margin: 0 10px;
 }
-section .container .current-series .content-current-series .card-series .content-card-series .thumbnails-card {
+section .container .current-series .content-current-series a .card-series .content-card-series .thumbnails-card {
   height: 150px;
   overflow: hidden;
 }
-section .container .current-series .content-current-series .card-series .content-card-series .thumbnails-card img {
+section .container .current-series .content-current-series a .card-series .content-card-series .thumbnails-card img {
   width: 100%;
 }
-section .container .current-series .content-current-series .card-series .content-card-series h3 {
+section .container .current-series .content-current-series a .card-series .content-card-series h3 {
   color: #ffffff;
   text-transform: uppercase;
   font-size: 10px;
