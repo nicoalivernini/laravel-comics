@@ -24,6 +24,12 @@
   flex-wrap: wrap;
 }
 
+@mixin flex-j-center-wrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 @mixin flex-between-center {
   display: flex;
   justify-content: space-between;

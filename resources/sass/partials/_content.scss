@@ -23,7 +23,7 @@ section {
         }
       }
       .content-current-series {
-        @include flex-center-wrap;
+        @include flex-j-center-wrap;
         a {
           text-decoration: none;
           width: calc(100% / 6 - 20px);
@@ -31,7 +31,7 @@ section {
           .card-series {
             .content-card-series {
               .thumbnails-card {
-                height: 150px;
+                height: 110px;
                 overflow: hidden;
                 img {
                 width: 100%;
@@ -41,7 +41,8 @@ section {
                 color: $color-white;
                 text-transform: uppercase;
                 font-size: 10px;
-                padding: 5px 0;
+                padding-top: 10px;
+                padding-bottom: 20px;
                 font-weight: 300;
               }
             }
@@ -55,9 +56,9 @@ section {
             color: $color-white;
             background-color: $color-blue;
             text-transform: uppercase;
-            padding: 7px 35px;
+            padding: 8px 40px;
             border: none;
-            margin-bottom: 10px;
+            margin: 15px 0;
           }
         }
       }
@@ -80,11 +81,17 @@ section {
             color: $color-white;
             text-transform: uppercase;
             padding: 40px 0;
+            &:nth-child(4) {
+              img {
+                width: 32px;
+              }
+            }
             img {
               width: 40px;
               padding-right: 10px;
             }
             h4 {
+              font-size: 12px;
               font-weight: 200;
             }
           }

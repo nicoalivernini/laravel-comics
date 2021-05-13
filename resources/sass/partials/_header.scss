@@ -43,7 +43,6 @@ header {
           }
           .center-menu-navbar {
             .content-center-menu-navbar {
-              height: 55px;
               @include flex-center;
               ul {
                 @include flex-center;

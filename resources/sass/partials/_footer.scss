@@ -13,6 +13,13 @@ footer {
           .menu-right {
             ul {
               list-style: none;
+                &:nth-child(2) {
+                  li {
+                    h4 {
+                      margin-top: 10px;
+                    }
+                  }
+                }
               li {
                 h4 {
                   text-transform: uppercase;
@@ -36,6 +43,12 @@ footer {
             @include flex-center-start;
             ul {
               list-style: none;
+              &:first-child {
+                margin-left: 15px;
+              }
+              &:last-child {
+                margin-left: 15px;
+              }
               li {
                 h4 {
                   text-transform: uppercase;
