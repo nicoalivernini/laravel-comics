@@ -220,16 +220,19 @@ section .container .thumb-nav {
 }
 section .container .thumb-nav .content-thumb-nav {
   position: absolute;
-  top: -170px;
+  top: -190px;
 }
 section .container .thumb-nav .content-thumb-nav img {
   width: 100px;
+}
+section .container .thumb-nav .content-thumb-nav .bg-blue {
+  background-color: #0d69f6;
 }
 
 section .container .description-comic .content-description-comic {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   margin: 25px 0;
 }
 section .container .description-comic .content-description-comic .content-left {
@@ -239,6 +242,7 @@ section .container .description-comic .content-description-comic .content-left .
   text-transform: uppercase;
   font-size: 25px;
   margin: 10px 0;
+  color: #052f4b;
 }
 section .container .description-comic .content-description-comic .content-left .banner-price {
   background-color: #419f41;
@@ -297,15 +301,15 @@ section .container .info-comic .content-info-comic .left-info-comic {
 section .container .info-comic .content-info-comic .left-info-comic h4 {
   font-size: 20px;
   padding: 10px 0;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #dadada;
 }
 section .container .info-comic .content-info-comic .left-info-comic .specific-info .art-info {
   padding: 10px 0;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #dadada;
 }
 section .container .info-comic .content-info-comic .left-info-comic .specific-info .written-info {
   padding: 10px 0;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #dadada;
 }
 section .container .info-comic .content-info-comic .right-info-comic {
   width: 45%;
@@ -314,19 +318,19 @@ section .container .info-comic .content-info-comic .right-info-comic {
 section .container .info-comic .content-info-comic .right-info-comic h4 {
   font-size: 20px;
   padding: 10px 0;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #dadada;
 }
 section .container .info-comic .content-info-comic .right-info-comic .specific-info .series {
   padding: 10px 0;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #dadada;
 }
 section .container .info-comic .content-info-comic .right-info-comic .specific-info .price {
   padding: 10px 0;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #dadada;
 }
 section .container .info-comic .content-info-comic .right-info-comic .specific-info .date {
   padding: 10px 0;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #dadada;
 }
 section .container .banner-comic .content-banner-comic {
   display: flex;
@@ -339,10 +343,10 @@ section .container .banner-comic .content-banner-comic .card-banner-comic {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  border-left: 1px solid red;
+  border-left: 1px solid #dadada;
 }
 section .container .banner-comic .content-banner-comic .card-banner-comic:last-child {
-  border-right: 1px solid red;
+  border-right: 1px solid #dadada;
 }
 section .container .banner-comic .content-banner-comic .card-banner-comic span {
   text-transform: uppercase;
@@ -352,13 +356,17 @@ section .container .banner-comic .content-banner-comic .card-banner-comic img {
   width: 30px;
 }
 
+footer .container {
+  position: relative;
+}
 footer .container.background {
   background-image: url("./../img/footer-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
 footer .container .content-footer {
-  padding: 50px 0;
+  padding-top: 25px;
+  padding-bottom: 5px;
 }
 footer .container .content-footer .menu-footer .content-menu {
   display: flex;
@@ -426,6 +434,12 @@ footer .container .content-footer .cookies-bar .content-cookies-bar p a {
   color: #0d69f6;
   text-decoration: none;
 }
+footer .container .content-footer img {
+  position: absolute;
+  top: 0;
+  right: 7%;
+  width: 35%;
+}
 footer .container.color {
   background-color: #303030;
 }
@@ -460,5 +474,5 @@ footer .container .banner-footer .content-banner-footer .banner-footer-left ul l
   font-weight: 600;
 }
 footer .container .banner-footer .content-banner-footer .banner-footer-left ul li img {
-  width: 30px;
+  width: 25px;
 }

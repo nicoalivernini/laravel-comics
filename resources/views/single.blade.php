@@ -11,6 +11,7 @@ in base all'indice dell'array in cui è. -->
     <div class="thumb-nav">
       <div class="content-thumb-nav">
         <img src="{{$comic['thumb']}}" alt="">
+        <div class="bg-blue"></div>
       </div>
     </div>
   </div>
@@ -57,9 +58,11 @@ in base all'indice dell'array in cui è. -->
           <div class="specific-info">
             <div class="art-info">
               <p class="title">Art by:</p>
-              @foreach ($comic['artists'] as $single)
-              <span><a href="">{{$single}},</a></span>
-              @endforeach
+              <div class="artists">
+                @foreach ($comic['artists'] as $single)
+                <span><a href="">{{$single}},</a></span>
+                @endforeach
+              </div>
             </div>
             <div class="written-info">
               <p class="title">Written by:</p>

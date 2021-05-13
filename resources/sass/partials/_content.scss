@@ -107,20 +107,23 @@ section {
       position: relative;
       .content-thumb-nav {
         position: absolute;
-        top: -170px;
+        top: -190px;
         img {
           width: 100px;
+        }
+        .bg-blue {
+          background-color: $color-blue;
         }
       }
     }
   }
 }
-
+//Description comic
 section {
   .container {
     .description-comic {
       .content-description-comic {
-        @include flex-center;
+        @include flex-center-start;
         margin: 25px 0;
         .content-left {
           padding-right: 20px;
@@ -129,6 +132,7 @@ section {
               text-transform: uppercase;
               font-size: 25px;
               margin: 10px 0;
+              color: $color_title_comic;
             }
           }
           .banner-price {
@@ -197,12 +201,12 @@ section {
           h4 {
             font-size: 20px;
             padding: 10px 0;
-            border-bottom: 1px solid red;
+            border-bottom: 1px solid $color_border_info;
           }
           .specific-info {
             .art-info {
               padding: 10px 0;
-              border-bottom: 1px solid red;
+              border-bottom: 1px solid $color_border_info;
               span {
                 &.title{
 
@@ -211,7 +215,7 @@ section {
             }
             .written-info {
               padding: 10px 0;
-              border-bottom: 1px solid red;
+              border-bottom: 1px solid $color_border_info;
               span {
                 &.title {
 
@@ -226,12 +230,12 @@ section {
           h4 {
             font-size: 20px;
             padding: 10px 0;
-            border-bottom: 1px solid red;
+            border-bottom: 1px solid $color_border_info;
           }
           .specific-info {
             .series {
               padding: 10px 0;
-              border-bottom: 1px solid red;
+              border-bottom: 1px solid $color_border_info;
               p {
                 &.title {
 
@@ -243,7 +247,7 @@ section {
             }
             .price {
               padding: 10px 0;
-              border-bottom: 1px solid red;
+              border-bottom: 1px solid $color_border_info;
               p {
                 &.title {
 
@@ -255,7 +259,7 @@ section {
             }
             .date {
               padding: 10px 0;
-              border-bottom: 1px solid red;
+              border-bottom: 1px solid $color_border_info;
               p {
                 &.title {
 
@@ -276,9 +280,9 @@ section {
           width: calc(100% / 4);
           height: 40px;
           @include flex-between-start;
-          border-left: 1px solid red;
+          border-left: 1px solid $color_border_info;
             &:last-child {
-              border-right: 1px solid red;
+              border-right: 1px solid $color_border_info;
             }
           span {
             text-transform: uppercase;

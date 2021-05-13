@@ -48,9 +48,11 @@
         <div class="cookies-bar">
           <div class="content-cookies-bar">
             <p>All Site Content TM and © 2020 DC Entertainment, unless otherwise <a href="#">noted here</a>. All rights reserved.
-            <br><a href="">Cookies Settings</a></p>
+            <br>
+            <a href="">Cookies Settings</a></p>
           </div>
         </div>
+          <img src="{{ asset('img/dc-logo-bg.png') }}" alt="">
       </div>
     </div>
   </div>
