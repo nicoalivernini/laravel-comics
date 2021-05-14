@@ -1,6 +1,7 @@
 footer {
   .container {
     position: relative;
+    overflow: hidden;
     &.background {
       background-image: url('./../img/footer-bg.jpg');
       background-size: cover;
@@ -87,9 +88,9 @@ footer {
       }
       img {
         position: absolute;
-        top: 0;
+        top: -50px;
         right: 7%;
-        width: 35%;
+        width: 40%;
       }
     }
   }

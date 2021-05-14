@@ -188,6 +188,7 @@ section .container .current-series .load-more .content-load-more button {
 
 section .container.blue {
   background-color: #0d69f6;
+  z-index: 2;
 }
 section .container .banner .content-banner ul {
   list-style: none;
@@ -229,6 +230,10 @@ section .container .thumb-nav .content-thumb-nav .bg-blue {
   background-color: #0d69f6;
 }
 
+section .container {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
 section .container .description-comic .content-description-comic {
   display: flex;
   justify-content: center;
@@ -303,70 +308,84 @@ section .container .info-comic .content-info-comic {
   align-items: flex-start;
 }
 section .container .info-comic .content-info-comic .left-info-comic {
-  width: 45%;
+  width: 48%;
   padding-right: 10px;
 }
 section .container .info-comic .content-info-comic .left-info-comic h4 {
   font-size: 20px;
-  padding: 20px 0;
+  padding: 30px 0;
   border-bottom: 1px solid #dadada;
   font-weight: 500;
 }
 section .container .info-comic .content-info-comic .left-info-comic .specific-info .art-info {
-  padding: 10px 0;
+  padding: 15px 0;
   border-bottom: 1px solid #dadada;
+  display: flex;
 }
 section .container .info-comic .content-info-comic .left-info-comic .specific-info .art-info p.title {
   font-size: 13px;
-  width: 100px;
+  width: 300px;
+}
+section .container .info-comic .content-info-comic .left-info-comic .specific-info .art-info .artists span a {
+  text-decoration: none;
+  color: #0d69f6;
 }
 section .container .info-comic .content-info-comic .left-info-comic .specific-info .written-info {
-  padding: 10px 0;
+  padding: 15px 0;
   border-bottom: 1px solid #dadada;
+  display: flex;
 }
 section .container .info-comic .content-info-comic .left-info-comic .specific-info .written-info p.title {
   font-size: 13px;
-  width: 100px;
+  width: 350px;
+}
+section .container .info-comic .content-info-comic .left-info-comic .specific-info .written-info .writer span a {
+  text-decoration: none;
+  color: #0d69f6;
 }
 section .container .info-comic .content-info-comic .right-info-comic {
-  width: 45%;
+  width: 48%;
   padding-left: 10px;
 }
 section .container .info-comic .content-info-comic .right-info-comic h4 {
   font-size: 20px;
-  padding: 20px 0;
+  padding: 30px 0;
   border-bottom: 1px solid #dadada;
   font-weight: 500;
 }
 section .container .info-comic .content-info-comic .right-info-comic .specific-info .series {
-  padding: 10px 0;
+  padding: 15px 0;
   border-bottom: 1px solid #dadada;
 }
 section .container .info-comic .content-info-comic .right-info-comic .specific-info .series p.title {
   display: inline-block;
   width: 100px;
   font-size: 13px;
-  width: 100px;
+  width: 120px;
+}
+section .container .info-comic .content-info-comic .right-info-comic .specific-info .series span a {
+  text-decoration: none;
+  color: #0d69f6;
 }
 section .container .info-comic .content-info-comic .right-info-comic .specific-info .price {
-  padding: 10px 0;
+  padding: 15px 0;
   border-bottom: 1px solid #dadada;
 }
 section .container .info-comic .content-info-comic .right-info-comic .specific-info .price p.title {
   display: inline-block;
   width: 100px;
   font-size: 13px;
-  width: 100px;
+  width: 120px;
 }
 section .container .info-comic .content-info-comic .right-info-comic .specific-info .date {
-  padding: 10px 0;
+  padding: 15px 0;
   border-bottom: 1px solid #dadada;
 }
 section .container .info-comic .content-info-comic .right-info-comic .specific-info .date p.title {
   display: inline-block;
   width: 100px;
   font-size: 13px;
-  width: 100px;
+  width: 120px;
 }
 section .container .banner-comic .content-banner-comic {
   display: flex;
@@ -396,6 +415,7 @@ section .container .banner-comic .content-banner-comic .card-banner-comic img {
 
 footer .container {
   position: relative;
+  overflow: hidden;
 }
 footer .container.background {
   background-image: url("./../img/footer-bg.jpg");
@@ -474,9 +494,9 @@ footer .container .content-footer .cookies-bar .content-cookies-bar p a {
 }
 footer .container .content-footer img {
   position: absolute;
-  top: 0;
+  top: -50px;
   right: 7%;
-  width: 35%;
+  width: 40%;
 }
 footer .container.color {
   background-color: #303030;

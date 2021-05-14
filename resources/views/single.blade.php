@@ -1,8 +1,3 @@
-<!-- title prezzo descrizione in alto la thumbnails -->
-<!-- Riprendi tutti questi valori andando a riprendere il comic
-in base all'indice dell'array in cui è. -->
-
-<!--  -->
 @extends('layouts.app')
 
 @section('main')
@@ -66,9 +61,11 @@ in base all'indice dell'array in cui è. -->
             </div>
             <div class="written-info">
               <p class="title">Written by: </p>
-              @foreach ($comic['writers'] as $single)
-              <span><a href="">{{$single}},</a></span>
-              @endforeach
+              <div class="writer">
+                @foreach ($comic['writers'] as $single)
+                <span><a href="">{{$single}},</a></span>
+                @endforeach
+              </div>
             </div>
           </div>
         </div>
@@ -91,6 +88,7 @@ in base all'indice dell'array in cui è. -->
         </div>
       </div>
     </div>
+    <hr>
     <div class="banner-comic">
       <div class="content-banner-comic">
         <div class="card-banner-comic">

@@ -70,6 +70,7 @@ section {
   .container {
     &.blue {
       background-color: $color-blue;
+      z-index: 2;
     }
     .banner {
       .content-banner {
@@ -121,6 +122,8 @@ section {
 //Description comic
 section {
   .container {
+      margin-top: 60px;
+      margin-bottom: 60px;
     .description-comic {
       .content-description-comic {
         @include flex-center-start;
@@ -203,71 +206,92 @@ section {
       .content-info-comic {
         @include flex-between-start;
         .left-info-comic {
-          width: 45%;
+          width: 48%;
           padding-right: 10px;
           h4 {
             font-size: 20px;
-            padding: 20px 0;
+            padding: 30px 0;
             border-bottom: 1px solid $color_border_info;
             font-weight: 500;
           }
           .specific-info {
             .art-info {
-              padding: 10px 0;
+              padding: 15px 0;
               border-bottom: 1px solid $color_border_info;
+              display: flex;
               p {
                 &.title{
                 font-size: 13px;
-                width: 100px;
+                width: 300px;
+                }
+              }
+              .artists {
+                span {
+                  a {
+                    text-decoration: none;
+                    color: $color-blue;
+                  }
                 }
               }
             }
             .written-info {
-              padding: 10px 0;
+              padding: 15px 0;
               border-bottom: 1px solid $color_border_info;
+              display: flex;
               p {
                 &.title {
                 font-size: 13px;
-                width: 100px;
+                width: 350px;
+                }
+              }
+              .writer {
+                span {
+                  a {
+                    text-decoration: none;
+                    color: $color-blue;
+                  }
                 }
               }
             }
           }
         }
         .right-info-comic {
-          width: 45%;
+          width: 48%;
           padding-left: 10px;
           h4 {
             font-size: 20px;
-            padding: 20px 0;
+            padding: 30px 0;
             border-bottom: 1px solid $color_border_info;
             font-weight: 500;
           }
           .specific-info {
             .series {
-              padding: 10px 0;
+              padding: 15px 0;
               border-bottom: 1px solid $color_border_info;
               p {
                 &.title {
                   display: inline-block;
                   width: 100px;
                   font-size: 13px;
-                  width: 100px;
+                  width: 120px;
                 }
               }
               span {
-
+                a {
+                  text-decoration: none;
+                  color: $color-blue;
+                }
               }
             }
             .price {
-              padding: 10px 0;
+              padding: 15px 0;
               border-bottom: 1px solid $color_border_info;
               p {
                 &.title {
                   display: inline-block;
                   width: 100px;
                   font-size: 13px;
-                  width: 100px;
+                  width: 120px;
                 }
               }
               span {
@@ -275,14 +299,14 @@ section {
               }
             }
             .date {
-              padding: 10px 0;
+              padding: 15px 0;
               border-bottom: 1px solid $color_border_info;
               p {
                 &.title {
                   display: inline-block;
                   width: 100px;
                   font-size: 13px;
-                  width: 100px;
+                  width: 120px;
                 }
               }
               span {
