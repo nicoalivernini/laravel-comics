@@ -54,8 +54,8 @@ header .container .navbar-menu .menu-navbar .content-menu-navbar {
   align-items: center;
 }
 header .container .navbar-menu .menu-navbar .content-menu-navbar .right-menu-navbar .content-right-menu-navbar img {
-  width: 40%;
-  padding: 5px 0;
+  width: 45px;
+  padding: 10px 0;
 }
 header .container .navbar-menu .menu-navbar .content-menu-navbar .center-menu-navbar .content-center-menu-navbar {
   display: flex;

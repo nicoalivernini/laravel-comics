@@ -88,7 +88,6 @@
         </div>
       </div>
     </div>
-    <hr>
     <div class="banner-comic">
       <div class="content-banner-comic">
         <div class="card-banner-comic">
