@@ -2,7 +2,7 @@
 
 @section('main')
 <section>
-  <div class="container">
+  <div class="container full">
     <div class="thumb-nav">
       <div class="content-thumb-nav">
         <img src="{{$comic['thumb']}}" alt="">
@@ -25,7 +25,9 @@
             </div>
             <div class="availability">
               <span>available</span>
-              <span>Check Availability <i class="fas fa-sort-down"></i></span>
+              <select type="button" name="button">
+                <option value="">Check Availability<i class="fas fa-sort-down"></i></option>
+              </select>
             </div>
           </div>
           <div class="description">
@@ -52,7 +54,9 @@
           <h4>Talent</h4>
           <div class="specific-info">
             <div class="art-info">
-              <p class="title">Art by: </p>
+              <div class="title-info">
+                <p class="title">Art by: </p>
+              </div>
               <div class="artists">
                 @foreach ($comic['artists'] as $single)
                 <span><a href="">{{$single}},</a></span>
@@ -60,7 +64,9 @@
               </div>
             </div>
             <div class="written-info">
-              <p class="title">Written by: </p>
+              <div class="title-info">
+                <p class="title">Written by: </p>
+              </div>
               <div class="writer">
                 @foreach ($comic['writers'] as $single)
                 <span><a href="">{{$single}},</a></span>
@@ -88,6 +94,8 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="container-full">
     <div class="banner-comic">
       <div class="content-banner-comic">
         <div class="card-banner-comic">

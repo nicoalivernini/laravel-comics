@@ -55,7 +55,6 @@ header .container .navbar-menu .menu-navbar .content-menu-navbar {
 }
 header .container .navbar-menu .menu-navbar .content-menu-navbar .right-menu-navbar .content-right-menu-navbar img {
   width: 45px;
-  padding: 10px 0;
 }
 header .container .navbar-menu .menu-navbar .content-menu-navbar .center-menu-navbar .content-center-menu-navbar {
   display: flex;
@@ -77,19 +76,30 @@ header .container .navbar-menu .menu-navbar .content-menu-navbar .center-menu-na
   font-size: 10px;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 0 15px;
+  padding: 30px 15px;
   font-weight: 500;
   color: #464646;
+  display: flex;
+  align-items: center;
 }
 header .container .navbar-menu .menu-navbar .content-menu-navbar .center-menu-navbar .content-center-menu-navbar ul li a.active {
   color: #0d69f6;
-  border-bottom: 2px solid #0d69f6;
+  border-bottom: 3px solid #0d69f6;
+  padding-top: 35px;
+  padding-bottom: 30px;
+}
+header .container .navbar-menu .menu-navbar .content-menu-navbar .center-menu-navbar .content-center-menu-navbar ul li a i {
+  vertical-align: middle;
+  padding: 0 2px;
+  padding-bottom: 5px;
+  color: #0d69f6;
 }
 header .container .navbar-menu .menu-navbar .content-menu-navbar .left-menu-navbar .content-left-menu-navbar {
   display: flex;
   justify-content: center;
   align-items: center;
   border-bottom: 2px solid #0d69f6;
+  padding-bottom: 1px;
 }
 header .container .navbar-menu .menu-navbar .content-menu-navbar .left-menu-navbar .content-left-menu-navbar input {
   width: 70px;
@@ -185,6 +195,9 @@ section .container .current-series .load-more .content-load-more button {
   border: none;
   margin: 15px 0;
 }
+section .container .current-series .load-more .content-load-more button:hover {
+  cursor: pointer;
+}
 
 section .container.blue {
   background-color: #0d69f6;
@@ -215,19 +228,22 @@ section .container .banner .content-banner ul li h4 {
   font-size: 12px;
   font-weight: 200;
 }
-
-section .container .thumb-nav {
-  position: relative;
+section .container .banner .content-banner ul li:hover {
+  cursor: pointer;
 }
+
 section .container .thumb-nav .content-thumb-nav {
-  position: absolute;
-  top: -190px;
+  position: relative;
 }
 section .container .thumb-nav .content-thumb-nav img {
   width: 100px;
+  position: absolute;
+  bottom: 10px;
+  left: 10%;
 }
 section .container .thumb-nav .content-thumb-nav .bg-blue {
   background-color: #0d69f6;
+  height: 50px;
 }
 
 section .container {
@@ -273,8 +289,10 @@ section .container .description-comic .content-description-comic .content-left .
   padding-right: 20px;
   color: #a3ff8b;
 }
-section .container .description-comic .content-description-comic .content-left .banner-price .availability span i {
-  vertical-align: top;
+section .container .description-comic .content-description-comic .content-left .banner-price .availability select {
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
 }
 section .container .description-comic .content-description-comic .content-left .description {
   padding: 15px 0;
@@ -300,7 +318,7 @@ section .container.color {
   background-color: #f4f4f4;
 }
 section .container .info-comic {
-  padding-bottom: 70px;
+  padding-bottom: 90px;
 }
 section .container .info-comic .content-info-comic {
   display: flex;
@@ -312,6 +330,7 @@ section .container .info-comic .content-info-comic .left-info-comic {
   padding-right: 10px;
 }
 section .container .info-comic .content-info-comic .left-info-comic h4 {
+  color: #05304c;
   font-size: 20px;
   padding: 30px 0;
   border-bottom: 1px solid #dadada;
@@ -322,9 +341,14 @@ section .container .info-comic .content-info-comic .left-info-comic .specific-in
   border-bottom: 1px solid #dadada;
   display: flex;
 }
-section .container .info-comic .content-info-comic .left-info-comic .specific-info .art-info p.title {
+section .container .info-comic .content-info-comic .left-info-comic .specific-info .art-info .title-info p.title {
   font-size: 13px;
-  width: 300px;
+  width: 100px;
+  color: #05304c;
+}
+section .container .info-comic .content-info-comic .left-info-comic .specific-info .art-info .artists {
+  margin-left: 30px;
+  font-size: 13px;
 }
 section .container .info-comic .content-info-comic .left-info-comic .specific-info .art-info .artists span a {
   text-decoration: none;
@@ -335,9 +359,14 @@ section .container .info-comic .content-info-comic .left-info-comic .specific-in
   border-bottom: 1px solid #dadada;
   display: flex;
 }
-section .container .info-comic .content-info-comic .left-info-comic .specific-info .written-info p.title {
+section .container .info-comic .content-info-comic .left-info-comic .specific-info .written-info .title-info p.title {
   font-size: 13px;
-  width: 350px;
+  width: 100px;
+  color: #05304c;
+}
+section .container .info-comic .content-info-comic .left-info-comic .specific-info .written-info .writer {
+  font-size: 13px;
+  margin-left: 30px;
 }
 section .container .info-comic .content-info-comic .left-info-comic .specific-info .written-info .writer span a {
   text-decoration: none;
@@ -348,6 +377,7 @@ section .container .info-comic .content-info-comic .right-info-comic {
   padding-left: 10px;
 }
 section .container .info-comic .content-info-comic .right-info-comic h4 {
+  color: #05304c;
   font-size: 20px;
   padding: 30px 0;
   border-bottom: 1px solid #dadada;
@@ -361,9 +391,11 @@ section .container .info-comic .content-info-comic .right-info-comic .specific-i
   display: inline-block;
   width: 100px;
   font-size: 13px;
-  width: 120px;
+  width: 130px;
+  color: #05304c;
 }
 section .container .info-comic .content-info-comic .right-info-comic .specific-info .series span a {
+  font-size: 13px;
   text-decoration: none;
   color: #0d69f6;
 }
@@ -375,7 +407,12 @@ section .container .info-comic .content-info-comic .right-info-comic .specific-i
   display: inline-block;
   width: 100px;
   font-size: 13px;
-  width: 120px;
+  width: 130px;
+  color: #05304c;
+}
+section .container .info-comic .content-info-comic .right-info-comic .specific-info .price span {
+  font-size: 13px;
+  color: #3f3f3f;
 }
 section .container .info-comic .content-info-comic .right-info-comic .specific-info .date {
   padding: 15px 0;
@@ -385,14 +422,26 @@ section .container .info-comic .content-info-comic .right-info-comic .specific-i
   display: inline-block;
   width: 100px;
   font-size: 13px;
-  width: 120px;
+  width: 130px;
+  color: #05304c;
 }
-section .container .banner-comic .content-banner-comic {
+section .container .info-comic .content-info-comic .right-info-comic .specific-info .date span {
+  font-size: 13px;
+  color: #3f3f3f;
+}
+section .container-full {
+  background-color: #f4f4f4;
+}
+section .container-full .banner-comic {
+  border-top: 1px solid #dadada;
+}
+section .container-full .banner-comic .content-banner-comic {
+  padding: 0 10%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section .container .banner-comic .content-banner-comic .card-banner-comic {
+section .container-full .banner-comic .content-banner-comic .card-banner-comic {
   width: calc(100% / 4);
   height: 60px;
   padding: 10px;
@@ -401,16 +450,19 @@ section .container .banner-comic .content-banner-comic .card-banner-comic {
   align-items: flex-start;
   border-left: 1px solid #dadada;
 }
-section .container .banner-comic .content-banner-comic .card-banner-comic:last-child {
+section .container-full .banner-comic .content-banner-comic .card-banner-comic:last-child {
   border-right: 1px solid #dadada;
 }
-section .container .banner-comic .content-banner-comic .card-banner-comic span {
+section .container-full .banner-comic .content-banner-comic .card-banner-comic span {
   text-transform: uppercase;
   color: #cfcfcf;
   font-size: 12px;
 }
-section .container .banner-comic .content-banner-comic .card-banner-comic img {
+section .container-full .banner-comic .content-banner-comic .card-banner-comic img {
   width: 30px;
+}
+section .container-full .banner-comic .content-banner-comic .card-banner-comic:hover {
+  cursor: pointer;
 }
 
 footer .container {
@@ -515,6 +567,9 @@ footer .container .banner-footer .content-banner-footer .banner-footer-right but
   text-transform: uppercase;
   background-color: transparent;
   padding: 10px 15px;
+}
+footer .container .banner-footer .content-banner-footer .banner-footer-right button:hover {
+  cursor: pointer;
 }
 footer .container .banner-footer .content-banner-footer .banner-footer-left ul {
   list-style: none;

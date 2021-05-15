@@ -1,3 +1,4 @@
+//Copertine fumetti - Home
 section {
   .container {
     position: relative;
@@ -59,13 +60,16 @@ section {
             padding: 8px 40px;
             border: none;
             margin: 15px 0;
+            &:hover {
+              cursor: pointer;
+            }
           }
         }
       }
     }
   }
 }
-
+//Banner blu - Home
 section {
   .container {
     &.blue {
@@ -95,31 +99,36 @@ section {
               font-size: 12px;
               font-weight: 200;
             }
+            &:hover {
+              cursor: pointer;
+            }
           }
         }
       }
     }
   }
 }
-
+//Thumb comic + banner blu - Singola
 section {
   .container {
     .thumb-nav {
-      position: relative;
       .content-thumb-nav {
-        position: absolute;
-        top: -190px;
+        position: relative;
         img {
           width: 100px;
+          position: absolute;
+          bottom: 10px;
+          left: 10%;
         }
         .bg-blue {
           background-color: $color-blue;
+          height: 50px;
         }
       }
     }
   }
 }
-//Description comic
+//Descrizione comic - Singola
 section {
   .container {
       margin-top: 60px;
@@ -161,8 +170,14 @@ section {
                   padding-right: 20px;
                   color: $color-green-title;
                 }
-                i {
-                  vertical-align: top;
+              }
+              select {
+                background-color: transparent;
+                color: $color-white;
+                border: none;
+                // border-left: 1px solid red;
+                option {
+
                 }
               }
             }
@@ -195,20 +210,21 @@ section {
     }
   }
 }
-
+//Info comic - Singola
 section {
   .container {
     &.color {
       background-color: $color_gray_back_comic;
     }
     .info-comic {
-      padding-bottom: 70px;
+      padding-bottom: 90px;
       .content-info-comic {
         @include flex-between-start;
         .left-info-comic {
           width: 48%;
           padding-right: 10px;
           h4 {
+            color: $color_talent_specs_comic;
             font-size: 20px;
             padding: 30px 0;
             border-bottom: 1px solid $color_border_info;
@@ -219,13 +235,18 @@ section {
               padding: 15px 0;
               border-bottom: 1px solid $color_border_info;
               display: flex;
-              p {
-                &.title{
-                font-size: 13px;
-                width: 300px;
+              .title-info {
+                p {
+                  &.title{
+                  font-size: 13px;
+                  width: 100px;
+                  color: $color_talent_specs_comic;
+                  }
                 }
               }
               .artists {
+                margin-left: 30px;
+                font-size: 13px;
                 span {
                   a {
                     text-decoration: none;
@@ -238,13 +259,18 @@ section {
               padding: 15px 0;
               border-bottom: 1px solid $color_border_info;
               display: flex;
-              p {
-                &.title {
-                font-size: 13px;
-                width: 350px;
+              .title-info {
+                p {
+                  &.title {
+                  font-size: 13px;
+                  width: 100px;
+                  color: $color_talent_specs_comic;
+                  }
                 }
               }
               .writer {
+                font-size: 13px;
+                margin-left: 30px;
                 span {
                   a {
                     text-decoration: none;
@@ -259,6 +285,7 @@ section {
           width: 48%;
           padding-left: 10px;
           h4 {
+            color: $color_talent_specs_comic;
             font-size: 20px;
             padding: 30px 0;
             border-bottom: 1px solid $color_border_info;
@@ -273,11 +300,13 @@ section {
                   display: inline-block;
                   width: 100px;
                   font-size: 13px;
-                  width: 120px;
+                  width: 130px;
+                  color: $color_talent_specs_comic;
                 }
               }
               span {
                 a {
+                  font-size: 13px;
                   text-decoration: none;
                   color: $color-blue;
                 }
@@ -291,11 +320,13 @@ section {
                   display: inline-block;
                   width: 100px;
                   font-size: 13px;
-                  width: 120px;
+                  width: 130px;
+                  color: $color_talent_specs_comic;
                 }
               }
               span {
-
+                font-size: 13px;
+                color: $color_price_comic;
               }
             }
             .date {
@@ -306,19 +337,26 @@ section {
                   display: inline-block;
                   width: 100px;
                   font-size: 13px;
-                  width: 120px;
+                  width: 130px;
+                  color: $color_talent_specs_comic;
                 }
               }
               span {
-
+                font-size: 13px;
+                color: $color_price_comic;
               }
             }
           }
         }
       }
     }
+  }
+  .container-full {
+    background-color: $color_gray_back_comic;
     .banner-comic {
+      border-top: 1px solid $color_border_info;
       .content-banner-comic {
+        padding: 0 10%;
         @include flex-center;
         .card-banner-comic {
           width: calc(100% / 4);
@@ -336,6 +374,9 @@ section {
           }
           img {
             width: 30px;
+          }
+          &:hover {
+            cursor: pointer;
           }
         }
       }

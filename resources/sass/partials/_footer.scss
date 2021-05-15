@@ -109,6 +109,9 @@ footer {
             text-transform: uppercase;
             background-color: transparent;
             padding: 10px 15px;
+            &:hover {
+              cursor: pointer;
+            }
           }
         }
         .banner-footer-left {
